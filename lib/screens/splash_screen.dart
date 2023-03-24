@@ -3,7 +3,7 @@ import 'dart:io';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:miniproject2/main.dart';
-import 'base_screen.dart';
+import 'login_screen.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -24,8 +24,9 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple,
       body: Center(
-        child:Image.asset("assets/images/splash.jpg")),
+        child:Image.asset("assets/images/splash.png")),
         );
   }
 }

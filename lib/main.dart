@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:miniproject2/screens/book_search_screen.dart';
 import 'package:miniproject2/screens/settings.dart';
 import 'package:miniproject2/screens/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -79,3 +82,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+

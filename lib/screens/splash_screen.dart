@@ -3,7 +3,7 @@ import 'dart:io';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:miniproject2/main.dart';
-import 'book.dart';
+import 'base_screen.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -17,7 +17,7 @@ class _SplashState extends State<Splash> {
 
     Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => (HomePage())));
+          context, MaterialPageRoute(builder: (context) => (MainPage())));
     });
   }
 

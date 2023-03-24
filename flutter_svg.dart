@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'lib/book.dart';
+import 'lib/screens/book.dart';
 
 class BookCard extends StatelessWidget {
   final Book book;

@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
 class BaseScreen extends StatelessWidget {
-  final String title;
-  final Widget body;
+  //final String title;
+  //final Widget body;
   
-  BaseScreen({required this.title, required this.body});
+  // ignore: use_key_in_widget_constructors
+  //const BaseScreen({ required this.title, required this.body});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+       // title: Text(title),
       ),
-      body: body,
+      //body: body,
       bottomNavigationBar: BottomNavigationBar(
         // navigation bar items
         items: [

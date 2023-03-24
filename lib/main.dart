@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject2/book_search_screen.dart';
-import 'package:miniproject2/settings.dart';
+import 'package:miniproject2/screens/book_search_screen.dart';
+import 'package:miniproject2/screens/settings.dart';
+import 'package:miniproject2/screens/splash_screen.dart';
 
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: MainPage(),
+      home: Splash(),
     );
   }
 }

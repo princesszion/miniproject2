@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-import '../book.dart';
+import 'book.dart';
 
 class BookService {
   static const _baseUrl = 'https://www.googleapis.com/books/v1/volumes';

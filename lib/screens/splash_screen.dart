@@ -3,7 +3,6 @@ import 'dart:io';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:miniproject2/main.dart';
-import 'login_screen.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -17,7 +16,7 @@ class _SplashState extends State<Splash> {
 
     Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => (MainPage())));
+          context, MaterialPageRoute(builder: (context) => (MyApp())));
     });
   }
 
@@ -26,7 +25,23 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       backgroundColor: Colors.purple,
       body: Center(
-        child:Image.asset("assets/images/splash.png")),
-        );
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/images/splash.png"),
+            SizedBox(height: 5), // add some space between the image and text
+            Text(
+              'Welcome to My Book Search App!',
+              style: TextStyle(
+                fontSize: 24,
+                //color: Colors.#F7D661,
+                color: Color(0xFFF7D661),
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

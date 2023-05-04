@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -49,20 +52,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyB_ETlG8RmCOvusRKm16wI3UbEXkwx-J18',
-    appId: '1:1015324123496:web:ab87864050484d493736dd',
-    messagingSenderId: '1015324123496',
-    projectId: 'miniproject2-3be2d',
-    authDomain: 'miniproject2-3be2d.firebaseapp.com',
-    storageBucket: 'miniproject2-3be2d.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAO6jdSwSTS89i4_ztLfzzbrnW3lwVgM4Q',
-    appId: '1:1015324123496:android:28667ff1458aecd23736dd',
-    messagingSenderId: '1015324123496',
-    projectId: 'miniproject2-3be2d',
-    storageBucket: 'miniproject2-3be2d.appspot.com',
+    apiKey: 'AIzaSyBGqO-xCqq4EZ2Qr9zV5MVFE8kegOOOgl4',
+    appId: '1:150250915609:android:70803a0b9853687a5e6788',
+    messagingSenderId: '150250915609',
+    projectId: 'summative-45e4d',
+    storageBucket: 'summative-45e4d.appspot.com',
   );
 }

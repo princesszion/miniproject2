@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'book.dart';
+import 'note_service.dart';
 
 class BookCard extends StatelessWidget {
   final Book book;
@@ -87,6 +88,16 @@ class BookSummaryScreen extends StatelessWidget {
               book.thumbnailUrl,
               style: Theme.of(context).textTheme.bodyText1,
             ),
+            // Add a button to navigate to the notes page
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Notes()),
+                );
+              },
+              child: Text('Take notes'),
+            )
           ],
         ),
       ),

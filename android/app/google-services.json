@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "1015324123496",
-    "project_id": "miniproject2-3be2d",
-    "storage_bucket": "miniproject2-3be2d.appspot.com"
+    "project_number": "150250915609",
+    "project_id": "summative-45e4d",
+    "storage_bucket": "summative-45e4d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1015324123496:android:28667ff1458aecd23736dd",
+        "mobilesdk_app_id": "1:150250915609:android:70803a0b9853687a5e6788",
         "android_client_info": {
           "package_name": "com.example.miniproject2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1015324123496-qo5496u0jqnjplf9puq38l48gq70u5gp.apps.googleusercontent.com",
+          "client_id": "150250915609-a2s6a7dcs9ccaq2555m0devgp3g5a77f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAO6jdSwSTS89i4_ztLfzzbrnW3lwVgM4Q"
+          "current_key": "AIzaSyBGqO-xCqq4EZ2Qr9zV5MVFE8kegOOOgl4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1015324123496-qo5496u0jqnjplf9puq38l48gq70u5gp.apps.googleusercontent.com",
+              "client_id": "150250915609-a2s6a7dcs9ccaq2555m0devgp3g5a77f.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "150250915609-5pufd9lg41o12hsquqc4hprt848ebdb6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.miniproject2"
+              }
             }
           ]
         }
